@@ -1,0 +1,208 @@
+@font-face {
+  font-family: Whyte;
+  src: url("../fonts/ABCWhyte-Regular.woff");
+  src: url("../fonts/ABCWhyte-Regular.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Whyte;
+  src: url("../fonts/ABCWhyte-Medium.woff");
+  src: url("../fonts/ABCWhyte-Medium.woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* General Reset */
+body {
+  font-family:'Whyte', Arial, sans-serif;
+  background-color: #121212; /* Dark background */
+  color: white;
+  margin: 20px;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  gap:24px;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  gap:24px;
+  width: 100%;
+}
+
+a{
+  color: #FF4438;
+  text-decoration: none;
+}
+
+form{
+  display: flex;
+  flex-direction: column; /* Coloca los elementos en una columna */
+  gap: 24px; /* Espaciado vertical entre los elementos */
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%; /* Adjust as needed */
+}
+
+.error-message{
+  margin: 0;
+  font-size: 16px;
+  color: #FF4438;
+}
+
+.at-hide{
+  display: none;
+}
+
+label {
+  font-family: 'Whyte', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px; /* Inner padding */
+  color: black;
+  position: relative;
+}
+
+.input-wrapper input {
+  border: none;
+  outline: none;
+  font-family: 'Whyte', Arial, sans-serif;
+  font-size: 16px;
+  flex: 1;
+  padding: 5px 8px 5px 8px; /* Space for the icon on the left */
+  caret-color: #FF4438; /* Cambia el color del caret */
+}
+
+.input-wrapper.show-icon input {
+  border: none;
+  outline: none;
+  font-family: 'Whyte', Arial, sans-serif;
+  font-size: 16px;
+  flex: 1;
+  padding: 5px 8px 5px 35px; /* Space for the icon on the left */
+  caret-color: #FF4438; /* Cambia el color del caret */
+}
+
+.input-wrapper:focus-within {
+  outline: none;
+  border: 1px solid #FF4438; /* Inside border (red) */
+  box-shadow: 0 0 0 3px #FFE1DF; /* Outside border (light red) */
+}
+
+.input-wrapper input::placeholder {
+  color: #aaa;
+}
+
+/* Estilo base para el textarea */
+.textarea-styled {
+  font-size: 16px;
+  font-family: 'Whyte', Arial, Helvetica, sans-serif;
+  padding: 8px 12px; /* Espaciado interno */
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  outline: none;
+  resize: vertical; /* Permite cambiar el tamaño verticalmente */
+  min-height: 100px; /* Altura mínima para el área de texto */
+  width:95%;
+  caret-color: #FF4438; /* Cambia el color del caret */
+}
+
+/* Estado de foco */
+.textarea-styled:focus {
+  outline: none;
+  border: 1px solid #FF4438; /* Inside border (red) */
+  box-shadow: 0 0 0 3px #FFE1DF; /* Outside border (light red) */
+}
+
+/* Icon styles */
+.icon {
+  position: absolute;
+  left: 10px;
+  font-size: 16px;
+  color: #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.at-primary-button{
+  display: flex;
+  height: 52px;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap:8px;
+  color: white;
+  font-family: 'Whyte', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border:none;
+  background-color: #FF4438;
+  box-shadow: 0px 1px 0px 0px rgba(37, 35, 32, 0.05), 0px 2px 2px 0px rgba(0, 0, 0, 0.06);
+}
+
+
+/* Select */
+.input-wrapper select {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'Whyte', Arial, sans-serif;
+  font-size: 16px;
+  height:34px;
+  color: black; /* Color del texto seleccionado */
+  width: 100%; /* Asegura que el select ocupe el ancho disponible */
+  appearance: none; /* Elimina los estilos por defecto */
+  padding: 5px 8px; /* Ajusta el espacio interno */
+  flex: 1; /* Permite que crezca dentro del contenedor */
+}
+
+
+.input-wrapper select option {
+  color: black; /* Color del texto de las opciones */
+}
+
+.input-wrapper select option:disabled {
+  color: #aaa; /* Color gris para la opción deshabilitada (como un placeholder) */
+}
+
+.input-wrapper:focus-within select {
+  color: black; /* Asegura que el color del texto no cambie en focus */
+}
+
+.input-wrapper select::placeholder {
+  color: #aaa; /* No es soportado por select, pero lo dejo como referencia */
+}
+
+.input-wrapper select:focus {
+  outline: none;
+}
+
+.chevron-icon {
+  position: absolute;
+  right: 15px;
+  pointer-events: none; /* Evita interferencias con el select */
+  color: #aaa; /* Color inicial del chevron */
+}
+
+.input-wrapper:focus-within .chevron-icon {
+  color: #FF4438; /* Cambia el color del chevron en focus */
+}

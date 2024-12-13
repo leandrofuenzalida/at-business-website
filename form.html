@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <section class="form-container">
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="form-with-recaptcha advertising-form" onsubmit="saveRegister(event, 'en')">
+    <input type="hidden" name="captcha_settings"
+      value='{"keyname": "nimrod_contact_forms","fallback":"true","orgId":"00D09000006LLc0","ts":""}'>
+    <input type="hidden" name="oid" value="00D09000006LLc0">
+    <input type="hidden" name="retURL" value="https://business.archdaily.com/contact-success">
+    <input type="hidden" name="lead_source" value="Business Website Architonic">
+      <div class="flex-row">
+        <!-- First Name -->
+        <div class="input-container">
+          <label for="input-label">First Name</label>
+          <div class="input-wrapper">
+            <input id="name" maxlength="80" name="first_name" size="20" type="text" placeholder="First name" required/>
+          </div>
+          <p class="error-message at-hide">
+            First name is required
+          </p>
+        </div>
+        <!-- Last Name -->
+        <div class="input-container">
+          <label for="input-label">Last Name</label>
+          <div class="input-wrapper">
+            <input id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="Last name" required/>
+          </div>
+        </div>
+      </div>
+      <!-- Business Email -->
+      <div class="input-container">
+        <label for="input-label">Business Email</label>
+        <div class="input-wrapper show-icon">
+          <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M21.0015 9.25C18.4942 11.1337 15.3775 12.25 12 12.25C8.62252 12.25 5.50577 11.1337 2.99854 9.25M2.75 4.75H21.25V19.25H2.75V4.75Z" stroke="#1B1915" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <input type="email" id="input-label" placeholder="Business Email" required/>
+        </div>
+      </div>
+      <!-- Company Name -->
+      <div class="input-container">
+        <label for="input-label">Company Name</label>
+        <div class="input-wrapper show-icon">
+          <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M3.75 19.25H14.25M3.75 19.25V4.75C3.75 4.19772 4.19772 3.75 4.75 3.75H13.25C13.8023 3.75 14.25 4.19772 14.25 4.75V8M3.75 19.25H1.75M14.25 19.25V8M14.25 19.25H20.25M14.25 8H19.25C19.8023 8 20.25 8.44772 20.25 9V19.25M20.25 19.25H22.25M10.25 8.75H7.75M7.75 12.75H10.25" stroke="#1B1915" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <input id="company" maxlength="40" name="company" size="20" type="text" placeholder="Company name" required/>
+        </div>
+      </div>
+      <div class="flex-row">
+        <!-- Job Title -->
+        <div class="input-container">
+          <label for="input-label">Job Title</label>
+          <div class="input-wrapper">
+            <input id="name" maxlength="80" name="job_title" size="20" type="text" placeholder="Job Title" required/>
+          </div>
+          <p class="error-message at-hide">
+            First name is required
+          </p>
+        </div>
+        <!-- Country -->
+        <div class="input-container">
+          <label for="input-label">Country</label>
+          <div class="input-wrapper">
+            <select id="country_code" name="country_code">
+              <option value="" disabled selected>Select Country</option>
+              <option value="country1">Country 1</option>
+              <option value="country2">Country 2</option>
+              <option value="country3">Country 3</option>
+            </select>
+            <span class="chevron-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 16" fill="none">
+                <path d="M8 10L12 14L16 10" stroke="#6E6861" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- Phone Number -->
+      <div class="input-container">
+        <label for="input-label">Phone Number</label>
+        <div class="input-wrapper show-icon">
+          <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9.75 19.25H14.25M6.75 22.25H17.25C17.8023 22.25 18.25 21.8023 18.25 21.25V2.75C18.25 2.19772 17.8023 1.75 17.25 1.75H6.75C6.19772 1.75 5.75 2.19772 5.75 2.75V21.25C5.75 21.8023 6.19772 22.25 6.75 22.25Z" stroke="#1B1915" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <input id="company" maxlength="40" name="company" size="20" type="text" placeholder="Phone Number" required/>
+        </div>
+      </div>
+      <!-- Business Type -->
+      <!-- Country -->
+      <div class="input-container">
+        <label for="input-label">Business Type</label>
+        <div class="input-wrapper">
+          <select id="country_code" name="country_code">
+            <option value="" disabled selected>Select Business Type</option>
+            <option value="country1">Country 1</option>
+            <option value="country2">Country 2</option>
+            <option value="country3">Country 3</option>
+          </select>
+          <span class="chevron-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 16" fill="none">
+              <path d="M8 10L12 14L16 10" stroke="#6E6861" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </div>
+      </div>
+      <!-- Message -->
+      <div class="input-container">
+        <label for="input-label">Message</label>
+        <div class="textarea-wrapper">
+          <textarea class="textarea-styled" placeholder="Message here"></textarea>
+        </div>
+      </div>
+      <!-- Privacy Policy -->
+        <div class="input">
+          <div class="afd-checkbox privacy-policy-input">
+            <input name="advertising[privacy_policy]" type="hidden" value="0">
+            <input id="privacy-policy" class="afd-checkbox__input" type="checkbox" value="1"
+              name="advertising[privacy_policy]">
+            <label for="privacy-policy" class="afd-checkbox__label">I agree to the <a target="blank"
+                href="https://daaily.com/terms-conditions.html">Terms of use</a> and the <a target="blank"
+                href="https://daaily.com/privacy-policy.html">Privacy Policy</a></label>
+          </div>
+        </div>
+        <!-- Recaptcha -->
+        <div class="g-recaptcha" data-sitekey="6LdP_QAdAAAAAPjCF3ZfTQady5GLxZRwINdkOc2D"></div>
+      <!-- Submit -->
+      <div class="button-container">
+        <input id="advertising-submit" type="submit" class="at-primary-button" value="Submit"
+          disabled="disabled">
+      </div>
+    </form>
+  </section>
+</body>
+</html>
