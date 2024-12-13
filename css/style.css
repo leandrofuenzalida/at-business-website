@@ -51,6 +51,7 @@ form{
   flex-direction: column;
   gap: 5px;
   width: 100%; /* Adjust as needed */
+  color: white;
 }
 
 .error-message{
@@ -120,7 +121,7 @@ label {
   outline: none;
   resize: vertical; /* Permite cambiar el tamaño verticalmente */
   min-height: 100px; /* Altura mínima para el área de texto */
-  width:95%;
+  width:100%;
   caret-color: #FF4438; /* Cambia el color del caret */
 }
 
