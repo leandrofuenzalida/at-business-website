@@ -202,6 +202,10 @@ label {
   right: 15px;
   pointer-events: none; /* Evita interferencias con el select */
   color: #aaa; /* Color inicial del chevron */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 8px;
 }
 
 .input-wrapper:focus-within .chevron-icon {
