@@ -210,8 +210,8 @@ label {
   outline: none;
 }
 
-label{
-  color: white;
+input label{
+  color: white !important;
 }
 
 
@@ -224,7 +224,7 @@ label{
   display: flex;
   align-items: center;
   pointer-events: none;
-  color: #aaa;
+  color: #aaa;  
 }
 
 .input-wrapper:focus-within .chevron-icon {
