@@ -182,11 +182,11 @@ label {
   font-family: 'Whyte', Arial, sans-serif;
   font-size: 16px;
   height:34px;
-  color: black; /* Color del texto seleccionado */
-  width: 100%; /* Asegura que el select ocupe el ancho disponible */
-  appearance: none; /* Elimina los estilos por defecto */
-  padding: 5px 8px; /* Ajusta el espacio interno */
-  flex: 1; /* Permite que crezca dentro del contenedor */
+  color: black;
+  width: 100%;
+  appearance: none;
+  padding: 5px 8px;
+  flex: 1;
 }
 
 
@@ -210,13 +210,17 @@ label {
   outline: none;
 }
 
+
 .chevron-icon {
   position: absolute;
   right: 15px;
-  top: 50%; /* Lo posiciona al 50% del contenedor */
-  transform: translateY(-50%); /* Centra verticalmente */
-  pointer-events: none; /* Evita interferencias con el select */
-  color: #aaa; /* Color inicial del chevron */
+  top: 30%;
+  transform: translateY(-50%);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  color: #aaa;
 }
 
 .input-wrapper:focus-within .chevron-icon {
