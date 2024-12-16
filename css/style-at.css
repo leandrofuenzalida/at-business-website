@@ -68,6 +68,7 @@ label {
   font-family: 'Whyte', Arial, sans-serif;
   font-size: 14px;
   font-weight: 600;
+  color: #ffffff;
 }
 
 .input-wrapper {
@@ -118,6 +119,7 @@ label {
   padding: 8px 12px; /* Espaciado interno */
   border: 1px solid #ccc;
   border-radius: 16px;
+  color: #1B1915;
   outline: none;
   resize: vertical; /* Permite cambiar el tamaño verticalmente */
   min-height: 100px; /* Altura mínima para el área de texto */
@@ -209,11 +211,6 @@ label {
 .input-wrapper select:focus {
   outline: none;
 }
-
-input label{
-  color: white !important;
-}
-
 
 .chevron-icon {
   position: absolute;

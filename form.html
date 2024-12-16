@@ -72,13 +72,13 @@
         <div class="input-container">
           <label for="input-label">Country</label>
           <div class="input-wrapper">
-            <select id="country_code" name="country_code">
+            <select id="country_code" name="country_code" class="chosen-select" data-placeholder="Country / Region">
               <option value="" disabled selected>Select Country</option>
               <option value="country1">Country 1</option>
               <option value="country2">Country 2</option>
               <option value="country3">Country 3</option>
             </select>
-            <span class="chevron-icon" style="top{30%};">
+            <span class="chevron-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M8 10L12 14L16 10" stroke="#6E6861" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -99,15 +99,22 @@
         </div>
       </div>
       <!-- Business Type -->
-      <!-- Country -->
       <div class="input-container">
         <label for="input-label">Business Type</label>
         <div class="input-wrapper">
           <select id="country_code" name="country_code">
-            <option value="" disabled selected>Select Business Type</option>
-            <option value="country1">Country 1</option>
-            <option value="country2">Country 2</option>
-            <option value="country3">Country 3</option>
+            <option value="" disabled selected></option>
+            <option value="" selected="" disabled="">Select Business Type</option>
+            <option value="manufacturer">Manufacturer</option>
+            <option value="contractor">Contractor</option>
+            <option value="retailer">Retailer</option>
+            <option value="agent">Agent</option>
+            <option value="marketing_media">Marketing / Media / PR Agency</option>
+            <option value="technology">Software &amp; Technology</option>
+            <option value="education">University / Education</option>
+            <option value="architect_designer">Designer / Architect</option>
+            <option value="organizations">Organizations</option>
+            <option value="other">Other</option>
           </select>
           <span class="chevron-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 16" fill="none">
@@ -143,5 +150,12 @@
       </div>
     </form>
   </section>
+  <script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+  <script src="./scripts.js"></script>
 </body>
 </html>
