@@ -193,7 +193,7 @@ label {
 
 
 .input-wrapper select option {
-  color: black; /* Color del texto de las opciones */
+  color: black;
 }
 
 .input-wrapper select option:disabled {
