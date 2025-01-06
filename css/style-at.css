@@ -265,3 +265,49 @@ input[type="checkbox"]:checked::after {
 }
 
 
+/* CHOICES */
+
+.choices {
+  width: 100%;
+}
+
+.input-wrapper:has(.choices) {
+  padding: 0;
+}
+.choices[data-type*=select-one] .choices__inner {
+  padding: 10px;
+  border: 0;
+  min-height: 33px;
+  font-size: 16px;
+  background: none;
+}
+
+.choices[data-type*=select-one]::after {
+  content: url("data:image/svg+xml; utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 28 28'%3E%3Cpath d='M9.3,11.7l4.7,4.7,4.7-4.7' fill='none' stroke='%236e6861' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.7'/%3E%3C/svg%3E");
+  margin-top: 0;
+  border: 0;
+  height: 28px;
+  width: 28px;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.choices[data-type*=select-one].is-open::after {
+  margin-top: 0;
+  transform: translateY(-50%) rotateX(180deg);
+}
+
+.input-container .error-message {
+  display: none;
+}
+
+.input-container.has-error .error-message {
+  display: block;
+}
+
+.input-container .error-message {
+  background-color: unset;
+}
+
+/* CHOICES */
+
