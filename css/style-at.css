@@ -265,7 +265,7 @@ input[type="checkbox"]:checked::after {
 }
 
 .afd-checkbox__label{
-  padding:0px;
+  padding-bottom:0px !important;
 }
 
 
