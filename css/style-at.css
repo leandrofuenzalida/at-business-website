@@ -315,3 +315,11 @@ input[type="checkbox"]:checked::after {
 
 /* CHOICES */
 
+@media (max-width: 450px) {
+  .flex-row{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    width: 100%;
+  }
+}
